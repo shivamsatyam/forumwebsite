@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	
+	<%datas.forEach((e)=>{%>
+
+	<pre>
+		<code class="<%=e.questiontype%>" style="font-size: 1.2rem; overflow-x: scroll;">
+			<%=e.description%>
+		</code>
+	</pre>
+		<%})%>
+</body>
+</html>

@@ -1,0 +1,183 @@
+        /*{
+            margin: 0;
+            padding: 0;
+        }*/
+        .computer{
+background-color: greenyellow;
+    height: 48px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+        }
+        #burgersss{
+    width: 46px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+        }
+        .childsss{
+    border: 1px solid;
+    width: 25px;
+    /*margin-top: 6px;*/
+        }
+        #c p{
+    font-size: 23px;
+    margin-left: 11px;
+    font-family: initial;
+        }
+        #firstsss{
+                    position: relative;
+    top: -15%;
+    transform: rotate(129deg);
+        }
+        #secondsss{
+                    top: -5%;
+    right: 0%;
+    position: relative;
+    transform: rotate(45deg);
+        }
+        #btn-smsss{
+                width: 37px;
+    height: 33px;
+    background-color: transparent;
+    border: 1px;
+    position: absolute;
+        }
+
+
+	.signup{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+		}
+		.first-signup{
+
+		}
+		.first-flex{
+
+		}
+		.first-flex h4{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: auto;
+		}
+		.second-flex{
+
+		}
+		.flex-btn{
+    /*border: 4px solid;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+
+		}
+		.signup-button{
+    margin-top: 8px;
+    width: 395px;
+    height: 33px;
+}
+
+		.window{
+    background-color: white;
+    box-shadow: 1px 1px 34px -11px black;
+		}
+		.window h3{
+/*border: 2px solid;*/
+    font-size: 21px;
+    margin-left: 15px;
+		}
+		.window input{
+width: 295px;
+    height: 27px;
+    margin: auto;
+    font-family: auto;
+    font-size: 24px;
+    display: block;
+		}
+		.window button{
+			    display: block;
+    margin: auto;
+    width: 300px;
+    /*margin-top: 24px;*/
+    height: 39px;
+    color: white;
+    background-color: blue;
+    border: 2px;
+    font-size: 22px;
+    margin-bottom: 0px;
+		}
+		#btn11{
+    background-color: white;
+    border: 2px;
+    font-weight: bold;
+    border-radius: 4px;
+    	}
+		#btn22{
+			    background-color: black;
+    border: 2px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+		}#btn33{
+			    background-color: #6363bf;
+    color: white;
+    border: 2px;
+    margin-bottom: 43px;
+			font-weight: bold;
+    border-radius: 4px;
+		}
+
+		.captcha{
+        background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    width: 269px;
+    margin: auto;
+		}
+		.inner-captcha{
+    width: 189px;
+    display: flex;
+    margin: 29px 12px;
+    flex-direction: column;
+		}
+		.inner-captcha input{
+        width: 208px;
+    background-color: white;
+    font-size: 15px;
+		}
+
+		.otp{
+        display: flex;
+    width: 344px;
+    margin-left: 28px;
+		}
+		.otp input{
+    width: 31px;
+    margin-bottom: 46px;
+		}
+		.yoyo{
+			background-color: whitesmoke;
+    display: block;
+    margin: auto;
+    width: 338px;
+        margin-bottom: 20px;
+    margin-top: 14px;
+    text-align: center;
+		}
+		.pp{
+			    font-size: 21px;
+    /* border: 2px solid; */
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+    width: 369px;
+    text-align: center;
+		}
+		.are{
+			text-decoration: none;
+		}
+
+
+

@@ -1,0 +1,42 @@
+        .computer{
+background-color: greenyellow;
+    height: 48px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+        }
+        #burgersss{
+    width: 46px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+        }
+        .childsss{
+    border: 1px solid;
+    width: 25px;
+    /*margin-top: 6px;*/
+        }
+        #c p{
+    font-size: 23px;
+    margin-left: 11px;
+    font-family: initial;
+        }
+        #firstsss{
+                    position: relative;
+    top: -15%;
+    transform: rotate(129deg);
+        }
+        #secondsss{
+                    top: -5%;
+    right: 0%;
+    position: relative;
+    transform: rotate(45deg);
+        }
+        #btn-smsss{
+                width: 37px;
+    height: 33px;
+    background-color: transparent;
+    border: 1px;
+    position: absolute;
+        }

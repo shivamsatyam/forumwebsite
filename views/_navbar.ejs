@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.navbar{
+			width: 100%;
+    box-shadow: 3px 1px 10px black;
+    display: flex;
+		}
+		.nav-first{
+			display: flex;
+			width: 60%;
+		}
+		.ul-list{
+display: flex;
+		}
+		.logo{
+			display: inline-block;
+/*border: 2px solid red;*/
+		}
+		.logo img{
+			width: 100px;
+height: 52px;
+		}
+		.li-item{
+list-style: none;
+/*border: 2px solid red;*/
+margin-left: 12px;
+font-size: 20px;
+		}
+		.nav-second{
+			    /*border: 2px solid red;*/
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+		}
+		.search{
+
+		}
+		.search input{
+			width: 210px;
+    text-align: center;
+    height: 30px;
+    font-size: 19px;
+		}
+		.btn{
+			    width: 73px;
+    height: 33px;
+    margin-right: 11px;
+    margin-left: 5px;
+    background-color: orange;
+    border: 2px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+		}
+
+		#btn{
+			    width: 102px;
+			    height: 43px;
+			    background-color: transparent;
+			    border: 3px solid red;
+			    color: red;
+			    border-radius: 7px;
+			    position: relative;
+			    font-size: 19px;
+			    right: 0%;
+				transition: 0.4s;	    
+		}
+		#btn:hover{
+			background-color: red;
+			color: white;
+		}
+		.a{
+			text-decoration: none;
+			color: black;
+		}
+
+
+
+		.hamburger-child{
+border: 2px solid black;
+    margin-top: 6px;
+		}
+		.hamburger {
+        border: 2px;
+    width: 41px;
+    display: none;
+    height: 37px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    background-color: white;
+    background: transparent;
+}
+
+
+
+		@media (min-width:0px) and (max-width:1200px){
+			
+			.hamburger{
+				display: block;
+			}
+			.ul-list{
+				display: none;
+			}
+			.nav-second{
+				display: none;
+			}
+		}
+
+
+.responsive{
+        border: 2px solid black;
+    width: 93vw;
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+
+.responsive ul{
+padding: 0;
+}
+
+.responsive ul li{
+    list-style: none;
+        list-style: none;
+    border: 2px solid;
+    padding: 4px;
+}
+
+.responsive ul li a{ 
+    text-decoration: none;
+    color: white;
+}
+.responsive ul li div{
+	text-align: center;
+}
+
+.responsive ul li input{
+        list-style: none;
+    width: 88vw;
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.responsive ul li button{
+        width: 73px;
+    height: 33px;
+    margin-right: 11px;
+    margin-left: 5px;
+    background-color: orange;
+    border: 2px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#btns{
+    width: 102px;
+    height: 43px;
+    background-color: white;
+    border: 3px solid red;
+    color: red;
+    border-radius: 7px;
+    position: relative;
+    font-size: 19px;
+    right: 0%;
+    transition: 0.4s;
+}
+.cut{
+    width: 40px;
+    height: 37px;
+    background: transparent;
+    border: 2px;
+    position: absolute;
+    top: 12%;
+    right: 10%;
+}
+.cut div{
+	    border: 2px solid white;
+}
+
+#cut-div-1{
+    transform: rotate(45deg);
+    top: 4px;
+    position: relative;
+}
+#cut-div-2{
+transform: rotate(141deg);
+}
+#btns:hover{
+			background-color: red;
+			color: white;
+		}
+
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+	<nav class="navbar">
+		<div class="nav-first">
+			<div class="logo"><img src="/img/android-chrome-192x192.png"></div>
+		
+			<ul class="ul-list">
+				<li class="li-item"><a href="/" class="a">Home</a></li>
+				<li class="li-item"><a href="#" class="a">Question</a></li>
+				<li class="li-item"><a href="#" class="a">About us</a></li>
+				<li class="li-item"><a href="#contact" class="a">Contact us</a></li>
+			</ul>
+		</div>
+
+		<div class="nav-second">
+			<div class="search">
+				<input type="text" placeholder="Search" id="search">
+				<button id="btn">Search</button>
+			</div>
+			
+			<button class="btn"><a href="/signup" style="text-decoration: none; color: white
+			;">Sign in</a></button>
+			<button class="btn"><a href="/login" style="text-decoration: none; color: white
+			;">Login</a></button>
+		</div>
+
+<button class="hamburger" id="hamburger">
+		<div class="hamburger-child"></div>
+		<div class="hamburger-child"></div>
+		<div class="hamburger-child"></div>
+	</button>
+	
+	</nav>
+
+
+<div class="responsive" id="responsive">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="#">questions</a></li>
+		<li><a href="#">About us</a></li>
+		<li><a href="#">Contact us</a></li>
+		<li>
+			<div>
+				<input type="text" placeholder="search" class="" id="small_search">
+				<button id="btns">Search</button>
+			</div>
+		</li>
+		<li>
+			<div>
+				<button><a href="/signup" style="text-decoration: none; color: white
+			;">Sign in</a></button>
+				<button><a href="/login" style="text-decoration: none; color: white
+			;">login in</a></button>
+			</div>
+		</li>
+
+	</ul>
+
+	<button class="cut" id="cut">
+		<div id="cut-div-1"></div>
+		<div id="cut-div-2"></div>
+	</button>
+</div>
+
+<script type="text/javascript">
+	let hamburger   = document.getElementById('hamburger')
+	let responsive = document.getElementById('responsive')
+
+	hamburger.addEventListener('click',(event)=>{
+		responsive.style.display = 'block';
+	
+	})
+
+	let cut =document.getElementById('cut');
+	cut.addEventListener('click',(event)=>{
+		responsive.style.display = 'none';
+	
+	})
+</script>
+
+
+<script type="text/javascript">
+	let search = document.getElementById('search')
+	let btn = document.getElementById('btn')
+	btn.addEventListener('click',(event)=>{
+		let data = search.value.toLowerCase()
+		window.location.href = `question.php?data=${data}`;
+	
+	})
+
+
+	let btns = document.getElementById('btns')
+	let small_search = document.getElementById('small_search')
+	
+	btns.addEventListener('click',(event)=>{
+		let new_data = small_search.value.toLowerCase()
+		window.location.href = `question.php/?data=${new_data}`;
+	
+	})
+
+</script>
+
+</body>
+</html>

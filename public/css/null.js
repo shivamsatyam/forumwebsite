@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<?php
+
+
+require "dbconnect.php";
+
+$id = $_GET['id'];
+$token = $_GET['token'];
+$sno = $_GET['s_no'];
+
+$answer_query = "SELECT * FROM `answer` WHERE `question_id`='$id' AND `question_token`='$token' AND `s no`='$sno'";
+$answer_result = mysqli_query($connection,$answer_query);
+
+	$language_sql = "SELECT * from `language` WHERE `id`='$token'";
+
+	$language_result = mysqli_query($connection,$language_sql);
+	$language_code = mysqli_fetch_assoc($language_result);
+
+
+if(!$answer_query){
+	echo "The answer does not run";
+}else{
+	$fetch=mysqli_fetch_assoc($answer_result);
+		echo '
+			<pre><code class="'.$language_code['checking_language'].'"><pre style="font-size: 1rem;">'.html_entity_decode($fetch['question_description'],ENT_HTML5).'</pre></code></pre>
+
+';
+	
+}
+
+
+
+
+?>

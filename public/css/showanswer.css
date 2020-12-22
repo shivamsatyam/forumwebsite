@@ -1,0 +1,50 @@
+.answer{
+    display: flex;
+    padding: 0;
+}
+
+
+
+.image{
+
+}
+
+
+.image img{
+    width: 3vw;
+    height: 8vh;
+    margin-top: 17px;
+}
+
+.title{
+margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title h2{
+
+}
+
+.title iframe{
+	    width: 94vw;
+    height: 39vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

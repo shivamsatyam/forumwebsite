@@ -1,0 +1,59 @@
+<%-include('_navbar.ejs')%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/css/threads.css">
+		<link rel="stylesheet" type="text/css" href="/css/showanswer.css">
+
+	<title>Document</title>
+</head>
+<body>
+		
+	<%datas.forEach((e)=>{%>
+		<div class="box" style="width:99vw;">
+		<div class="inner">
+			<h1>Welcome to Shivam</h1>
+			<p><%=e.title%></p>
+		</div>	
+		<hr>
+		<iframe src="/show/<%=id%>" class="second" style="width: 95vw;height: 40vh;">
+			
+		</iframe>
+	</div>
+
+	<%})%>	
+
+		<div class="discussions">
+		<form action="" method="post">
+			<div class="form-group">
+				<h3>Enter your answer title</h3>
+				<input type="text" name="title" required="" maxlength="80"><br>
+				<small>Please enter a specific title for your dicussion</small>
+				<h3>Ellaborate your answer</h3>
+				<textarea id="textarea" name="desc" required=""></textarea><br>
+				<button type="submit" name="submit">Post comment</button>
+			</div>
+			
+		</form>
+	</div>
+
+	<h1 style="text-align: center;">Answer</h1>
+	
+	
+	<%question_data.forEach((e)=>{%>
+	<div class="answer">
+		<div class="image">
+			<img src="/upload/<%=e.image%>" alt="">
+		</div>
+
+		<div class="title">
+			<h2><%=e.title%></h2>
+			<iframe src="/answershow/<%=e.questionid%>/<%=e._id%>"></iframe>
+		</div>
+	</div>	
+		<%})%>
+	
+</body>
+</html>
